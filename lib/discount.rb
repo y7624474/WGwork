@@ -1,5 +1,6 @@
 require_relative 'category'
 NODISCOUNT=1
+
 class Discount
   def rate(product_name, time)
     category = Category.new

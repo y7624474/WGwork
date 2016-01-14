@@ -11,21 +11,18 @@ describe Calculator do
   end
 
   describe "calculate no exist product" do
-    let(:calculater) { Calculator.new({"ipd" => "1"}) }
+    let(:calculater) { Calculator.new({"notexist" => "1"}) }
     it 'should calculate correct result when give buy a product which not exist' do
       expect(calculater.calculate).to eq(0.00)
     end
   end
 
   describe "calculate correct buy more thing" do
-    let(:calculater) { Calculator.new({"ipd" => "1", "bread" => "2"}) }
+    let(:calculater) { Calculator.new({"notexist" => "1", "bread" => "2"}) }
     it 'should calculate correct result when give buy a product which not exist' do
       expect(calculater.calculate).to eq(18.00)
     end
   end
-
-
-
 
   describe "test case 1" do
     let(:calculater) { Calculator.new({"time" => "2014.01.01", "vegetable" => "3", "paper" => "8"}) }

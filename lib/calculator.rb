@@ -8,11 +8,13 @@ class Calculator
   end
 
   def calculate
-    @list.each do |k, v|
-      sum_price(k, v)
+    @list.each do |product_name, quantity|
+      sum_price(product_name, quantity)
     end
     @result.round(2)
   end
+
+  private
 
   def sum_price(product_name, quantity)
     category = Category.new

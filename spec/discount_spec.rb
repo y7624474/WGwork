@@ -7,7 +7,7 @@ describe Discount do
 
   describe 'no discount' do
     it 'should return 1 when no discount with the product not exist' do
-      expect(discount.rate("iad","2014.01.12")).to eq(1)
+      expect(discount.rate("notexist","2014.01.12")).to eq(1)
     end
 
     it 'should return 1 when no discount without festival' do
