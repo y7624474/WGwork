@@ -1,48 +1,22 @@
-[
-  {
-    "electronic": [
-      {"ipad":"1999"},
-
-      {"iphone":"6000"},
-
-      {"display":"2399"}
-
-    ]
+{
+  "electronic": {
+    "ipad": "2399",
+    "iphone": "6000",
+    "display": "1799"
   },
-  {
-    "food": [
-      {
-        "bread": "3"
-      },
-      {
-        "cake": "10"
-      },
-      {
-        "fish": "15"
-      }
-    ]
+  "food": {
+    "bread": "9",
+    "cake": "10",
+    "fish": "15"
   },
-  {
-    "liquor": [
-      {
-        "beer": "10"
-      },
-      {
-        "wine": "60"
-      },
-      {
-        "fish": "15"
-      }
-    ]
+  "liquor": {
+    "beer": "25",
+    "wine": "60",
+    "fish": "15"
   },
-  {
-    "Commodity": [
-      {
-        "paper": "1"
-      },
-      {
-        "cup": "8"
-      }
-    ]
+  "commodity": {
+    "paper": "3.2",
+    "cup": "8",
+    "vegetable": "5.98"
   }
-]
+}
