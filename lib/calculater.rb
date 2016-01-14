@@ -12,9 +12,13 @@ class Calculater
     category = Category.new
     @list.each do |list|
       list.each do |k, v|
-       @result+=category.get_price(k)*v.to_i
+       sum_price(category, k, v)
       end
     end
     @result
+  end
+
+  def sum_price(category, product_name, quanlity)
+    @result+=category.get_price(product_name)*quanlity.to_i
   end
 end

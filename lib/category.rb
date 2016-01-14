@@ -5,10 +5,11 @@ class Category
     json_to_hash(INFO).each do |element|
       element.each do |key, values|
         values.each do |value|
-          return element.keys  if value.keys.last == input_product
+          return element.keys if value.keys.last == input_product
         end
       end
     end
+
   end
 
   def get_price(input_product)
@@ -19,6 +20,6 @@ class Category
         end
       end
     end
+    return 0
   end
-
 end

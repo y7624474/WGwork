@@ -8,6 +8,6 @@ describe Category do
     end
 
   it 'should get price when give a product' do
-    expect(category.get_price("ipad")).to eq(2000)
+    expect(category.get_price("ipad")).to eq(1999)
   end
 end
