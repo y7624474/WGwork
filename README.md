@@ -10,7 +10,7 @@
     4. bundle install
     
 ## Run test
-  run all the tests ,run command : `rspec spec`
+  run all the tests ,run command : `rspec spec` (题目中的两个测试用例在calculator_spec.rb中)
   
 ## Run Program
   run run.rb file , command : `ruby run.rb`

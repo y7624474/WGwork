@@ -1,6 +1,9 @@
 require 'json'
-INFO = 'product_info.json'
-DISCOUNT = 'discount.json'
+PRODUCT_INFO_JSON = 'product_info.json'
+DISCOUNT_JSON = 'discount.json'
+COUPON_JSON = 'coupon.json'
+COUPON_CONDITION = 0
+COUPON_AMOUNT = 1
 
 module JsonToHash
   def json_to_hash(input_file)
@@ -10,7 +13,7 @@ module JsonToHash
 
     rescue Exception
       puts "file error!"
-      false
+      exit
     end
 
   end

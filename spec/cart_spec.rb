@@ -5,7 +5,7 @@ describe Cart do
   let(:cart) { Cart.new }
 
   it 'should puts error when file not exist' do
-    expect(cart.add_product('erddor.json')).to eq(false)
+    expect(cart.add_product('notexist.json')).to eq(false)
   end
 
   it 'should puts error when json file error' do

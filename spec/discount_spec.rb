@@ -17,7 +17,7 @@ describe Discount do
 
   describe 'have discount' do
     it 'should return discount 0.7 when buy the electronic product at festival' do
-      expect(discount.rate("ipad","2014.11.11")).to eq(0.7)
+      expect(discount.rate("ipad","2013.11.11")).to eq(0.7)
     end
   end
 
