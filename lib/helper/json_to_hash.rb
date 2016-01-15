@@ -1,7 +1,7 @@
 require 'json'
-PRODUCT_INFO_JSON = 'product_info.json'
-DISCOUNT_JSON = 'discount.json'
-COUPON_JSON = 'coupon.json'
+PRODUCT_INFO_JSON = 'resource/product_info.json'
+DISCOUNT_JSON = 'resource/discount.json'
+COUPON_JSON = 'resource/coupon.json'
 COUPON_CONDITION = 0
 COUPON_AMOUNT = 1
 
@@ -13,7 +13,7 @@ module JsonToHash
 
     rescue Exception
       puts "file error!"
-      exit
+      false
     end
 
   end

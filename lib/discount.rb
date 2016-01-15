@@ -2,6 +2,7 @@ require_relative 'category'
 NODISCOUNT=1
 
 class Discount
+
   def rate(product_name, time)
     category = Category.new
     json_to_hash(DISCOUNT_JSON).each do |discount_time, products|
@@ -13,4 +14,5 @@ class Discount
     end
     return NODISCOUNT
   end
+
 end

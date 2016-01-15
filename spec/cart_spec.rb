@@ -9,10 +9,10 @@ describe Cart do
   end
 
   it 'should puts error when json file error' do
-    expect(cart.add_product('error.json')).to eq(false)
+    expect(cart.add_product('resource/error.json')).to eq(false)
   end
 
   it 'should add product to cart' do
-    expect(cart.add_product('input.json')["ipad"]).to eq("1")
+    expect(cart.add_product('resource/input.json')["ipad"]).to eq("1")
   end
 end
