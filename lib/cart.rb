@@ -1,8 +1,5 @@
 require_relative 'discount'
 require_relative 'coupon'
-require_relative 'helper/initialize_data'
-require_relative 'bill_printer'
-include InitializeData
 
 class Cart
 
