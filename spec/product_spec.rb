@@ -5,7 +5,7 @@ describe Product do
   let(:product) { Product.new }
 
   it 'should get no category when give a not exist product' do
-    expect(product.get_category("notexist")).to eq(nil)
+    expect(product.get_category("notexist")).to eq(0)
   end
 
   it 'should get category when give a product' do

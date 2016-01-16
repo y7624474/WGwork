@@ -7,7 +7,6 @@ DISCOUNT_JSON = 'resource/discount.json'
 COUPON_JSON = 'resource/coupon.json'
 COUPON_CONDITION = 0
 COUPON_AMOUNT = 1
-NO_COUPON = [0,0]
 NO_DISCOUNT = 1
 
 module InitializeData
