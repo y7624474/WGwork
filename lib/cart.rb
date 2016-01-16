@@ -1,6 +1,7 @@
 require_relative 'discount'
 require_relative 'coupon'
 require_relative 'helper/initialize_data'
+require_relative 'bill_printer'
 include InitializeData
 
 class Cart
@@ -13,6 +14,7 @@ class Cart
     @buy_list = buy_list
 
     total_price
+
     use_coupon.round(2)
   end
 
@@ -26,8 +28,8 @@ class Cart
   end
 
   def sum_price(product_name, quantity)
-    category = Product.new
-    @output_price += category.get_price(product_name) * quantity.to_i * get_discount(product_name)
+    product = Product.new
+    @output_price += product.get_price(product_name) * quantity.to_i * get_discount(product_name)
   end
 
   def get_discount(product_name)
