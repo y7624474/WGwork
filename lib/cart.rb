@@ -9,9 +9,7 @@ class Cart
 
   def check_out(buy_list)
     @buy_list = buy_list
-
     total_price
-
     use_coupon.round(2)
   end
 
@@ -34,11 +32,7 @@ class Cart
   end
 
   def use_coupon
-    if (@buy_list['time'])
-      Coupon.new.calculate_coupon(@buy_list['time'], @output_price)
-    else
-      @output_price
-    end
+    @buy_list['time'] ? Coupon.new.calculate_coupon(@buy_list['time'], @output_price) : @output_price
   end
 
 end
