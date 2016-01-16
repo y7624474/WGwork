@@ -8,7 +8,7 @@ class BillPrinter
 
   def print_bill
     check_out
-    @biller = @biller +'====================================='
+    @biller << '====================================='
     puts @biller
   end
 
@@ -23,15 +23,15 @@ class BillPrinter
 
   def print_product(product_name, quantity)
     product = Product.new
-    @biller += "#{product_name}    #{quantity}    #{product.get_price(product_name)}\n"
+    @biller << "#{product_name}    #{quantity}    #{product.get_price(product_name)}\n"
   end
 
   def print_time(quantity)
-    @biller += "\n日期 : #{quantity}\n"
+    @biller << "\n日期 : #{quantity}\n"
   end
 
   def check_out
-    @biller += "总计 : #{Cart.new.check_out(get_buy_list).to_s}\n"
+    @biller << "总计 : #{Cart.new.check_out(get_buy_list).to_s}\n"
   end
 
 end
